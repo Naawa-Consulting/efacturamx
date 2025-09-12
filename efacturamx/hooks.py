@@ -242,3 +242,23 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["module", "=", "Efacturamx"]
+        ],
+    },
+    {
+        "doctype": "Property Setter",
+        "filters": [
+            ["module", "=", "Efacturamx"]
+        ],
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [
+            ["module", "=", "Efacturamx"]
+        ],
+    },
+]
