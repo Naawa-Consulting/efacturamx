@@ -1446,6 +1446,15 @@
   "label":null,
   "insert_after":"mes",
   "options": "Clave Unidad SAT"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": null,
+  "name":"SaLes-invoice-timbrar",
+  "fieldname":"timbrar",
+  "fieldtype": "Button",
+  "label":"TIMBRAR FACTURA",
+  "insert_after":"due_date"
  }
- 
 ]

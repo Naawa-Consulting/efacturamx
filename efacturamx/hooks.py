@@ -262,3 +262,7 @@ fixtures = [
         ],
     },
 ]
+
+doctype_js = {
+    "Sales Invoice" : "public/js/facturacion_sales_invoice.js"
+}
