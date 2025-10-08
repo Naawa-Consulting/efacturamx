@@ -1,7 +1,7 @@
 frappe.ui.form.on("Sales Invoice", {
     timbrar: function(frm) {
         frappe.call({
-            method: "facturacion.timbrado_naawa.timbrar",
+            method: "efacturamx.timbrado_naawa.timbrar",
             args: {
                 docname: frm.doc.name,
                 doctype: frm.doc.doctype
