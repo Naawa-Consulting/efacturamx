@@ -1359,7 +1359,8 @@
   "fieldname":"rfc_cliente",
   "fieldtype": "Data",
   "label":"RFC",
-  "insert_after":"customer"
+  "insert_after":"customer",
+  "fetch_from": "customer.tax_id"
  },
   {
   "doctype":"Custom Field",
@@ -1466,7 +1467,7 @@
   "fieldtype": "Data",
   "label":"RFC Emisor",
   "insert_after":"custom_sellocfdi",
-  "fetch_from": "company.custom_razon_social"
+  "fetch_from": "company.tax_id"
  },
  {
   "doctype":"Custom Field",
@@ -1489,5 +1490,48 @@
   "label":"Regimen Fiscal Emisor",
   "insert_after":"cp_emisor",
   "fetch_from": "company.custom_regimen_fiscal"
- }     
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Account",
+  "module": null,
+  "name":"tipo_impuesto",
+  "fieldname":"tipo_impuesto_sat",
+  "fieldtype": "Select",
+  "options": "002",
+  "label":"Tipo de Impuesto (SAT)",
+  "insert_after":"account_type"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Sales Taxes and Charges",
+  "module": null,
+  "name":"tipo_impuesto_sales",
+  "fieldname":"tipo_impuesto_sat",
+  "fieldtype": "Data",
+  "label":"Tipo de Impuesto (SAT)",
+  "insert_after":"account_head",
+  "fetch_from": "account_head.tipo_impuesto_sat"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": null,
+  "name":"razon_social_cliente",
+  "fieldname":"razon_social_cliente",
+  "fieldtype": "Data",
+  "label":"Razón Social",
+  "insert_after":"rfc_cliente",
+  "fetch_from": "customer.custom_razon_social"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Company",
+  "module": null,
+  "name":"servidor_timbrado",
+  "fieldname":"servidor_timbrado",
+  "fieldtype": "Data",
+  "label":"URL Timbrado",
+  "insert_after":"custom_regimen_fiscal"
+ }               
 ]
