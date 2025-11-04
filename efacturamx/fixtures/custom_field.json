@@ -1451,6 +1451,7 @@
  {
   "doctype":"Custom Field",
   "dt":"Sales Invoice",
+  "depends_on": "eval:doc.status_timbre === \"Sin Timbrar\"",
   "module": null,
   "name":"SaLes-invoice-timbrar",
   "fieldname":"timbrar",
@@ -1533,5 +1534,27 @@
   "fieldtype": "Data",
   "label":"URL Timbrado",
   "insert_after":"custom_regimen_fiscal"
- }               
+ },
+ {
+  "depends_on": "eval:doc.status_timbre === \"Timbrado\"",
+  "doctype": "Custom Field",
+  "dt": "Sales Invoice",
+  "fieldname": "cancelar_timbre",
+  "fieldtype": "Button",
+  "insert_after": "timbrar",
+  "label": "CANCELAR TIMBRE",
+  "name": "Cancelar-timbre"
+ },
+ {
+  "doctype": "Custom Field",
+  "default":"Sin Timbrar",
+  "dt": "Sales Invoice",
+  "fieldname": "status_timbre",
+  "fieldtype": "Select",
+  "options": "Sin Timbrar\nTimbrado\nCancelado",
+  "insert_after": "cancelar_timbre",
+  "label": "Estado de facturación",
+  "name": "Estado-timbre",
+  "read_only": 0    
+ }
 ]
