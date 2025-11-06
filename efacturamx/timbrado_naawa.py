@@ -4,7 +4,7 @@ import json
 from frappe.utils import cint
 
 @frappe.whitelist()
-def timbrar(docname, doctype):
+def timbrar(docname, doctype, site_url=None):
     doc = frappe.get_doc(doctype, docname)
 
     company_name = "INDISTRIA ILUMINADORA DE ALMACENES"
@@ -14,6 +14,8 @@ def timbrar(docname, doctype):
         frappe.throw(f"No se encontró el campo 'servidor_timbrado' en la empresa {company_name}")
 
     datos = json.loads(frappe.as_json(doc.as_dict()))
+
+    datos["site_url"] = site_url or frappe.utils.get_url()  # fallback si no llega desde JS
 
     webhook_url = servidor_timbrado
     headers = {"Content-Type": "application/json"}

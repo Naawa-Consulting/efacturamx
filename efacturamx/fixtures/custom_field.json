@@ -1552,9 +1552,21 @@
   "fieldname": "status_timbre",
   "fieldtype": "Select",
   "options": "Sin Timbrar\nTimbrado\nCancelado",
-  "insert_after": "cancelar_timbre",
+  "insert_after": "motivo_cancelacion",
   "label": "Estado de facturación",
   "name": "Estado-timbre",
   "read_only": 0    
- }
+ },
+ {
+  "depends_on": "eval:doc.status_timbre === \"Timbrado\"",
+  "doctype": "Custom Field",
+  "default":"02",
+  "dt": "Sales Invoice",
+  "fieldname": "motivo_cancelacion",
+  "fieldtype": "Select",
+  "options": "02",
+  "insert_after": "cancelar_timbre",
+  "label": "Motivo de Cancelación",
+  "name": "motivo_cancelacion" 
+ } 
 ]
