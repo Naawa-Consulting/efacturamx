@@ -1568,5 +1568,24 @@
   "insert_after": "cancelar_timbre",
   "label": "Motivo de Cancelación",
   "name": "motivo_cancelacion" 
- } 
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Configuracion Timbrado",
+  "name":"server",
+  "fieldname":"servidor_flujo",
+  "fieldtype": "Select",
+  "label":"Servidor Flujo",
+  "options":"Test\nProductivo"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Configuracion Timbrado",
+  "name":"server_sw",
+  "fieldname":"servidor_timbrado",
+  "fieldtype": "Select",
+  "label":"Servidor Timbrado",
+  "options":"Test\nProductivo"
+ }   
+ 
 ]
