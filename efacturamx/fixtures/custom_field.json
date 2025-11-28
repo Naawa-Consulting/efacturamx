@@ -1554,7 +1554,7 @@
   "options": "Sin Timbrar\nTimbrado\nCancelado",
   "insert_after": "motivo_cancelacion",
   "label": "Estado de facturación",
-  "name": "Estado-timbre",
+  "name": "Estado-timbre-SI",
   "read_only": 0    
  },
  {
@@ -1606,13 +1606,13 @@
   "options": "Sin Timbrar\nTimbrado\nCancelado",
   "insert_after": "cfdi",
   "label": "Estado de facturación",
-  "name": "Estado-timbre",
+  "name": "Estado-timbre-pe",
   "read_only": 0    
  },
  {
   "doctype":"Custom Field",
   "dt":"Payment Entry",
-  "depends_on": "eval:doc.status_timbre === \"Sin Timbrar\"",
+  "depends_on": "eval:doc.status_timbre_pe === \"Sin Timbrar\"",
   "module": null,
   "name":"Payment-Entry-timbrar",
   "fieldname":"timbrar_complemento",
@@ -1628,7 +1628,7 @@
   "fieldname":"fecha_hora_timbrado",
   "fieldtype": "Datetime",
   "label":"Fecha y hora de presentacion",
-  "insert_after":"status_timbre"
+  "insert_after":"status_timbre_pe"
  }      
  
 ]

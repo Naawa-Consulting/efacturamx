@@ -1,5 +1,5 @@
 frappe.ui.form.on("Payment Entry", {
-    timbrar: function(frm) {
+    timbrar_complemento: function(frm) {
         frappe.call({
             method: "efacturamx.timbrado_naawa.timbrar",
             args: {
@@ -14,7 +14,7 @@ frappe.ui.form.on("Payment Entry", {
         });
     },
 
-    cancelar_timbre: function(frm) {
+    cancelar_complemento: function(frm) {
         frappe.call({
             method: "efacturamx.timbrado_naawa.timbrar",
             args: {
