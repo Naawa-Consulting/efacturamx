@@ -15,7 +15,7 @@ def timbrar(docname, doctype, site_url=None):
 
     datos = json.loads(frappe.as_json(doc.as_dict()))
 
-    datos["site_url"] = site_url or frappe.utils.get_url()  # fallback si no llega desde JS
+    datos["site_url"] = site_url or frappe.utils.get_url()  
 
     webhook_url = servidor_timbrado
     headers = {"Content-Type": "application/json"}

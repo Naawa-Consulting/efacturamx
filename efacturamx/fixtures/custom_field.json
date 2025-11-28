@@ -1586,6 +1586,49 @@
   "fieldtype": "Select",
   "label":"Servidor Timbrado",
   "options":"Test\nProductivo"
- }   
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Payment Entry",
+  "fieldname": "cfdi",
+  "fieldtype": "Section Break",
+  "insert_after": "references",
+  "label": "CFDI",
+  "name": "Cfdi",
+  "read_only": 0    
+ },   
+ {
+  "doctype": "Custom Field",
+  "default":"Sin Timbrar",
+  "dt": "Payment Entry",
+  "fieldname": "status_timbre_pe",
+  "fieldtype": "Select",
+  "options": "Sin Timbrar\nTimbrado\nCancelado",
+  "insert_after": "cfdi",
+  "label": "Estado de facturación",
+  "name": "Estado-timbre",
+  "read_only": 0    
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "depends_on": "eval:doc.status_timbre === \"Sin Timbrar\"",
+  "module": null,
+  "name":"Payment-Entry-timbrar",
+  "fieldname":"timbrar_complemento",
+  "fieldtype": "Button",
+  "label":"TIMBRAR COMPLEMENTO",
+  "insert_after":"fecha_hora_timbrado"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": null,
+  "name":"Payment-Entry-fecha-hora-timbrado",
+  "fieldname":"fecha_hora_timbrado",
+  "fieldtype": "Datetime",
+  "label":"Fecha y hora de presentacion",
+  "insert_after":"status_timbre"
+ }      
  
 ]
