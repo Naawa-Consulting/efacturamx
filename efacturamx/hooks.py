@@ -264,5 +264,6 @@ fixtures = [
 ]
 
 doctype_js = {
-    "Sales Invoice" : "public/js/facturacion_sales_invoice.js"
+    "Sales Invoice" : "public/js/facturacion_sales_invoice.js",
+    "Payment Entry": "public/js/facturacion_payment_entry.js"
 }
