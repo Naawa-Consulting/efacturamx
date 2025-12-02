@@ -984,7 +984,7 @@
   "fetch_from": null,
   "fetch_if_empty": 0,
   "fieldname": "custom_nocertificadocfdi",
-  "fieldtype": "Data",
+  "fieldtype": "Text",
   "hidden": 0,
   "hide_border": 0,
   "hide_days": 0,
@@ -1098,7 +1098,7 @@
   "fetch_from": null,
   "fetch_if_empty": 0,
   "fieldname": "custom_sellocfdi",
-  "fieldtype": "Data",
+  "fieldtype": "Text",
   "hidden": 0,
   "hide_border": 0,
   "hide_days": 0,
@@ -1155,7 +1155,7 @@
   "fetch_from": null,
   "fetch_if_empty": 0,
   "fieldname": "custom_sellosat",
-  "fieldtype": "Data",
+  "fieldtype": "Text",
   "hidden": 0,
   "hide_border": 0,
   "hide_days": 0,
@@ -1212,7 +1212,7 @@
   "fetch_from": null,
   "fetch_if_empty": 0,
   "fieldname": "custom_qrcode",
-  "fieldtype": "Data",
+  "fieldtype": "Text",
   "hidden": 0,
   "hide_border": 0,
   "hide_days": 0,
@@ -1571,6 +1571,26 @@
  },
  {
   "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": null,
+  "name":"Sales-Invoice-uuid-cancelacion",
+  "fieldname":"uuid_cancelacion",
+  "fieldtype": "Data",
+  "label":"UUID de Cancelacion",
+  "insert_after":"custom_uuid"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": "Efacturamx",
+  "name":"Sales-Invoice-xml-cancelacion",
+  "fieldname":"xml_cancelacion",
+  "fieldtype": "Attach",
+  "label":"XML de Cancelacion",
+  "insert_after":"custom_xml"
+ },
+ {
+  "doctype":"Custom Field",
   "dt":"Configuracion Timbrado",
   "name":"server",
   "fieldname":"servidor_flujo",
@@ -1598,13 +1618,34 @@
   "read_only": 0    
  },   
  {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": "Efacturamx",
+  "name":"Payment-Entry-forma-de-pago",
+  "fieldname":"forma_de_pago",
+  "fieldtype": "Link",
+  "label":"Forma de Pago",
+  "insert_after":"cfdi",
+  "options":"Forma de Pago"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": null,
+  "name":"Payment-Entry-fecha-hora-timbrado",
+  "fieldname":"fecha_hora_timbrado",
+  "fieldtype": "Datetime",
+  "label":"Fecha y hora de presentacion",
+  "insert_after":"forma_de_pago"
+ },
+ {
   "doctype": "Custom Field",
   "default":"Sin Timbrar",
   "dt": "Payment Entry",
   "fieldname": "status_timbre_pe",
   "fieldtype": "Select",
   "options": "Sin Timbrar\nTimbrado\nCancelado",
-  "insert_after": "cfdi",
+  "insert_after": "fecha_hora_timbrado",
   "label": "Estado de facturación",
   "name": "Estado-timbre-pe",
   "read_only": 0    
@@ -1618,17 +1659,86 @@
   "fieldname":"timbrar_complemento",
   "fieldtype": "Button",
   "label":"TIMBRAR COMPLEMENTO",
-  "insert_after":"fecha_hora_timbrado"
+  "insert_after":"status_timbre_pe"
+ },
+ {
+  "depends_on": "eval:doc.status_timbre === \"Timbrado\"",
+  "doctype": "Custom Field",
+  "dt": "Payment Entry",
+  "fieldname": "cancelar_complemento",
+  "fieldtype": "Button",
+  "insert_after": "timbrar_complemento",
+  "label": "CANCELAR COMPLEMENTO",
+  "name": "Payment-Entry-Cancelar-Complemento"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": "Efacturamx",
+  "name":"Payment-Entry-motivo-cancelacion",
+  "fieldname":"motivo_cancelacion",
+  "fieldtype": "Select",
+  "insert_after": "cancelar_complemento",
+  "options": "02"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": "Efacturamx",
+  "name":"Payment-Entry-column-breakk1",
+  "fieldname":"column_breakk1",
+  "fieldtype": "Column Break",
+  "insert_after": "motivo_cancelacion"
  },
  {
   "doctype":"Custom Field",
   "dt":"Payment Entry",
   "module": null,
-  "name":"Payment-Entry-fecha-hora-timbrado",
-  "fieldname":"fecha_hora_timbrado",
-  "fieldtype": "Datetime",
-  "label":"Fecha y hora de presentacion",
-  "insert_after":"status_timbre_pe"
- }      
- 
+  "name":"Payment-Entry-uuid",
+  "fieldname":"uuid",
+  "fieldtype": "Data",
+  "label":"UUID",
+  "insert_after":"column_breakk1"
+ },                 
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": null,
+  "name":"Payment-Entry-xml",
+  "fieldname":"xml",
+  "fieldtype": "Attach",
+  "label":"XML",
+  "insert_after":"uuid"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": null,
+  "name":"Payment-Entry-uuid-Cancelacion",
+  "fieldname":"uuid_cancelacion",
+  "fieldtype": "Data",
+  "label":"UUID de Cancelacion",
+  "insert_after":"xml"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": null,
+  "name":"Payment-Entry-xml-cancelacion",
+  "fieldname":"xml_cancelacion",
+  "fieldtype": "Attach",
+  "label":"XML de Cancelacion",
+  "insert_after":"uuid_cancelacion"
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Advance Taxes and Charges",
+  "module": "Efacturamx",
+  "name":"Payment-Entry-taxes-tipo_impuesto",
+  "fieldname":"tipo_impuesto_sat",
+  "fieldtype": "Data",
+  "label":"Tipo de Impuesto (SAT)",
+  "insert_after":"account_head",
+  "fetch_from": "account_head.tipo_impuesto_sat"
+ }    
 ]
