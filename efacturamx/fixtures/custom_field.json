@@ -1636,7 +1636,7 @@
   "fieldname":"fecha_hora_timbrado",
   "fieldtype": "Datetime",
   "label":"Fecha y hora de presentacion",
-  "insert_after":"forma_de_pago"
+  "insert_after":"metodo_de_pago"
  },
  {
   "doctype": "Custom Field",
@@ -1674,6 +1674,7 @@
  {
   "doctype":"Custom Field",
   "dt":"Payment Entry",
+  "label":"Motivo de Cancelación",
   "module": "Efacturamx",
   "name":"Payment-Entry-motivo-cancelacion",
   "fieldname":"motivo_cancelacion",
@@ -1740,5 +1741,27 @@
   "label":"Tipo de Impuesto (SAT)",
   "insert_after":"account_head",
   "fetch_from": "account_head.tipo_impuesto_sat"
- }    
+ },
+ {
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": "Efacturamx",
+  "name":"Sales-Invoice-Fecha-hora-cancelacion",
+  "fieldname":"fecha_cancelacion",
+  "fieldtype": "Datetime",
+  "label":"Fecha de Cancelación",
+  "insert_after":"cancelar_timbre",
+  "depends_on":"eval:doc.status_timbre === \"Timbrado\""
+},
+{
+  "doctype":"Custom Field",
+  "dt":"Payment Entry",
+  "module": "Efacturamx",
+  "name":"Payment-Entry-metodo-de-pago",
+  "fieldname":"metodo_de_pago",
+  "fieldtype": "Link",
+  "label":"Metodo de Pago",
+  "insert_after":"forma_de_pago",
+  "options": "Metodo de Pago"
+}           
 ]
