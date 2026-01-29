@@ -1,0 +1,222 @@
+[
+ {
+  "clave": "28",
+  "descripcion": "tarjeta credito",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "28",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "01",
+  "descripcion": "Efectivo",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "01",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "03",
+  "descripcion": "Transferencia electr\u00f3nica de fondos",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "03",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "99",
+  "descripcion": "Por definir",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "99",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "02",
+  "descripcion": "Cheque nominativo",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "02",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "04",
+  "descripcion": "Tarjeta de cr\u00e9dito",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "04",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "05",
+  "descripcion": "Monedero electr\u00f3nico",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "05",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "06",
+  "descripcion": "Dinero electr\u00f3nico",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "06",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "08",
+  "descripcion": "Vales de despensa",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "08",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "12",
+  "descripcion": "Daci\u00f3n en pago",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "12",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "13",
+  "descripcion": "Pago por subrogaci\u00f3n",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "13",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "14",
+  "descripcion": "Pago por consignaci\u00f3n",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "14",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "15",
+  "descripcion": "Condonaci\u00f3n",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "15",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "17",
+  "descripcion": "Compensaci\u00f3n",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "17",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "23",
+  "descripcion": "Novaci\u00f3n",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "23",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "24",
+  "descripcion": "Confusi\u00f3n",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "24",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "25",
+  "descripcion": "Remisi\u00f3n de deuda",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "25",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "26",
+  "descripcion": "Prescripci\u00f3n o caducidad",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "26",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "27",
+  "descripcion": "A satisfacci\u00f3n del acreedor",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "27",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "29",
+  "descripcion": "Tarjeta de servicios",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "29",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "30",
+  "descripcion": "Aplicaci\u00f3n de anticipos",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "30",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "31",
+  "descripcion": "Intermediario pagos",
+  "docstatus": 0,
+  "doctype": "Forma de Pago",
+  "name": "31",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

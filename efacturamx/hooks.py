@@ -260,7 +260,7 @@ fixtures = [
         "filters": [
             ["module", "=", "Efacturamx"]
         ],
-    },
+    }
 ]
 
 doctype_js = {

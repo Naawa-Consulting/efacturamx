@@ -1,0 +1,22 @@
+[
+ {
+  "clave": "PUE",
+  "descripcion": "Una sola exhibicion",
+  "docstatus": 0,
+  "doctype": "Metodo de Pago",
+  "name": "PUE",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "PPD",
+  "descripcion": "Pago en parcialidades o diferido",
+  "docstatus": 0,
+  "doctype": "Metodo de Pago",
+  "name": "PPD",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

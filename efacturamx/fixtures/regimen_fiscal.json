@@ -1,0 +1,192 @@
+[
+ {
+  "clave": "621",
+  "descripcion": "Incorporaci\u00f3n Fiscal",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "621",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "616",
+  "descripcion": "Sin obligaciones fiscales",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "616",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "601",
+  "descripcion": "General de Ley Personas Morales",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "601",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "603",
+  "descripcion": "Personas Morales con Fines no Lucrativos",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "603",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "605",
+  "descripcion": "Sueldos y Salarios e Ingresos Asimilados a Salarios",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "605",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "606",
+  "descripcion": "Arrendamiento",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "606",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "607",
+  "descripcion": "R\u00e9gimen de Enajenaci\u00f3n o Adquisici\u00f3n de Bienes",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "607",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "608",
+  "descripcion": "Dem\u00e1s ingresos",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "608",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "610",
+  "descripcion": "Residentes en el Extranjero sin Establecimiento Permanente en M\u00e9xico",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "610",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "611",
+  "descripcion": "Ingresos por Dividendos (socios y accionistas)",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "611",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "612",
+  "descripcion": "Personas F\u00edsicas con Actividades Empresariales y Profesionales",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "612",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "614",
+  "descripcion": "Ingresos por intereses",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "614",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "615",
+  "descripcion": "R\u00e9gimen de los ingresos por obtenci\u00f3n de premios",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "615",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "620",
+  "descripcion": "Sociedades Cooperativas de Producci\u00f3n que optan por diferir sus ingresos",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "620",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "622",
+  "descripcion": "Actividades Agr\u00edcolas, Ganaderas, Silv\u00edcolas y Pesqueras",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "622",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "623",
+  "descripcion": "Opcional para Grupos de Sociedades",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "623",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "624",
+  "descripcion": "Coordinados",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "624",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "625",
+  "descripcion": "R\u00e9gimen de las Actividades Empresariales con ingresos a trav\u00e9s de Plataformas Tecnol\u00f3gicas",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "625",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "626",
+  "descripcion": "R\u00e9gimen Simplificado de Confianza",
+  "docstatus": 0,
+  "doctype": "Regimen Fiscal",
+  "name": "626",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

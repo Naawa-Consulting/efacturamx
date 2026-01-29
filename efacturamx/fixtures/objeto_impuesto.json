@@ -1,0 +1,33 @@
+[
+ {
+  "clave": "01",
+  "descripcion": "No objeto de impuesto.",
+  "docstatus": 0,
+  "doctype": "Objeto Impuesto",
+  "name": "01",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "clave": "02",
+  "descripcion": "S\u00ed objeto de impuesto.",
+  "docstatus": 0,
+  "doctype": "Objeto Impuesto",
+  "name": "02",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "_liked_by": "[]",
+  "clave": "03",
+  "descripcion": "S\u00ed objeto del impuesto y no obligado al desglose.",
+  "docstatus": 0,
+  "doctype": "Objeto Impuesto",
+  "name": "03",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]
