@@ -1280,7 +1280,7 @@
  {
   "doctype":"Custom Field",
   "dt":"Sales Invoice",
-  "depends_on": "eval:doc.status_timbre === \"Sin Timbrar\"",
+  "depends_on": "eval:doc.status_timbre === \"Sin Timbrar\" && doc.docstatus === 1",
   "module": null,
   "name":"SaLes-invoice-timbrar",
   "fieldname":"timbrar",
