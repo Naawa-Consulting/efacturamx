@@ -31,7 +31,27 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  }
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clave producto SAT",
+   "link_count": 0,
+   "link_to": "Clave producto SAT",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+    {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clave unidad SAT",
+   "link_count": 0,
+   "link_to": "Clave unidad SAT",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+}
  ],
  "modified": "2025-09-12 18:08:56.344214",
  "modified_by": "Administrator",

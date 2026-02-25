@@ -23,6 +23,6 @@ def timbrar(docname, doctype, site_url=None):
     try:
         response = requests.post(webhook_url, json=datos, headers=headers)
         response.raise_for_status()
-        return "webhook activado correctamente"
+        return "Timbrando ..."
     except Exception as e:
-        frappe.throw(f"Error al activar webhook: {str(e)}")
+        frappe.throw(f"Error al activar timbrar: {str(e)}")
