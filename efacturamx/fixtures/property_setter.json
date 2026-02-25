@@ -31,7 +31,6 @@
   "row_name": null,
   "value": "RFC"
  },
- [
  {
   "doctype": "Property Setter",
   "doc_type": "Customer",
@@ -42,4 +41,3 @@
  }
 ]
 
-]
