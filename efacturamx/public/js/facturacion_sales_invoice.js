@@ -27,16 +27,15 @@ frappe.ui.form.on("Sales Invoice", {
                 frm.reload_doc();
             }
         });
-    }
-});
-frappe.ui.form.on('Sales Invoice', {
+    },
+
     error(frm) {
-        if (frm.doc.error) {
-            frappe.msgprint({
-                title: __('Error en Timbrado'),
-                message: frm.doc.error,
-                indicator: 'red'
-            });
-        }
+    if (frm.doc.error) {
+        frappe.msgprint({
+            title: __('Error en Timbrado'),
+            message: frm.doc.error,
+            indicator: 'red'
+        });
+    }
     }
 });
