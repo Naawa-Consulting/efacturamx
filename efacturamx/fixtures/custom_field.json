@@ -1034,6 +1034,7 @@
   "insert_after":"metodo_de_pago"
  },
  {
+  "allow_on_submit": 1,
   "doctype": "Custom Field",
   "default":"Sin Timbrar",
   "dt": "Payment Entry",
@@ -1084,7 +1085,8 @@
   "name":"Payment-Entry-column-breakk1",
   "fieldname":"column_breakk1",
   "fieldtype": "Column Break",
-  "insert_after": "motivo_cancelacion"
+  "insert_after": "motivo_cancelacion",
+  "allow_on_submit":1
  },
  {
   "doctype":"Custom Field",
@@ -1094,7 +1096,8 @@
   "fieldname":"uuid",
   "fieldtype": "Data",
   "label":"UUID",
-  "insert_after":"column_breakk1"
+  "insert_after":"column_breakk1",
+  "allow_on_submit":1
  },                 
  {
   "doctype":"Custom Field",
@@ -1104,7 +1107,8 @@
   "fieldname":"xml",
   "fieldtype": "Attach",
   "label":"XML",
-  "insert_after":"uuid"
+  "insert_after":"uuid",
+  "allow_on_submit":1
  },
  {
   "doctype":"Custom Field",
@@ -1125,7 +1129,8 @@
   "fieldname":"xml_cancelacion",
   "fieldtype": "Attach",
   "label":"XML de Cancelacion",
-  "insert_after":"uuid_cancelacion"
+  "insert_after":"uuid_cancelacion",
+  "allow_on_submit":1
  },
  {
   "doctype":"Custom Field",

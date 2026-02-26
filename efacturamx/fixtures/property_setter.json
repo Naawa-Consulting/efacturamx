@@ -37,7 +37,10 @@
   "field_name": "tax_id",
   "property": "insert_after",
   "property_type": "Data",
-  "value": "custom_razon_social"
+  "value": "custom_razon_social",
+  "module":"Efacturamx",
+  "name":"Customer-tax-id-position",
+  "doctype_or_field":"DocField"
  }
 ]
 
