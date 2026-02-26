@@ -460,11 +460,43 @@
   "doctype":"Custom Field",
   "dt":"Sales Invoice",
   "module": "Efacturamx",
+  "name":"Sales-invoice-relaciones",
+  "fieldname":"docs_relacionados",
+  "fieldtype": "Section Break",
+  "label":"Documentos Relacionados",
+  "insert_after":"error"
+},
+{
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": "Efacturamx",
+  "name":"Sales-invoice-tipo-relacion",
+  "fieldname":"tipo_relacion",
+  "fieldtype": "Link",
+  "label":"Relacion",
+  "insert_after":"docs_relacionados",
+  "options": "Relacion CFDI"
+},
+{
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": "Efacturamx",
+  "name":"Sales-invoice-docs-relacionados",
+  "fieldname":"tabla_docs_relacionados",
+  "fieldtype": "Table",
+  "label":"Documentos",
+  "insert_after":"tipo_relacion",
+  "options": "Documentos Relacionados"
+},
+{
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": "Efacturamx",
   "name":"Sales-invoice-datos-timbrado-break",
   "fieldname":"section_datos_timbrado",
   "fieldtype": "Section Break",
   "label":"Comprobantes Fiscales",
-  "insert_after":"orden_compra"
+  "insert_after":"tabla_docs_relacionados"
  },
  {
   "allow_on_submit": 1,
@@ -555,38 +587,6 @@
   "insert_after":"custom_qrcode",
   "allow_on_submit":1,
   "read_only": 1
-},
- {
-  "doctype":"Custom Field",
-  "dt":"Sales Invoice",
-  "module": "Efacturamx",
-  "name":"Sales-invoice-relaciones",
-  "fieldname":"docs_relacionados",
-  "fieldtype": "Section Break",
-  "label":"Documentos Relacionados",
-  "insert_after":"error"
-},
-{
-  "doctype":"Custom Field",
-  "dt":"Sales Invoice",
-  "module": "Efacturamx",
-  "name":"Sales-invoice-tipo-relacion",
-  "fieldname":"tipo_relacion",
-  "fieldtype": "Link",
-  "label":"Relacion",
-  "insert_after":"docs_relacionados",
-  "options": "Relacion CFDI"
-},
-{
-  "doctype":"Custom Field",
-  "dt":"Sales Invoice",
-  "module": "Efacturamx",
-  "name":"Sales-invoice-docs-relacionados",
-  "fieldname":"tabla_docs_relacionados",
-  "fieldtype": "Table",
-  "label":"Documentos",
-  "insert_after":"tipo_relacion",
-  "options": "Documentos Relacionados"
 },
 {
   "doctype":"Custom Field",
