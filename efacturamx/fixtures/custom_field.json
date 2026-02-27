@@ -456,6 +456,18 @@
   "label":"Orden de Compra",
   "insert_after":"remision"
 },
+ {
+  "doctype":"Custom Field",
+  "dt":"Sales Invoice",
+  "module": "Efacturamx",
+  "name":"Sales-invoice-Error-Timbrado",
+  "fieldname":"error",
+  "fieldtype": "Text",
+  "label":"Error en Timbrado",
+  "insert_after":"custom_qrcode",
+  "allow_on_submit":1,
+  "read_only": 1
+},
 {
   "doctype":"Custom Field",
   "dt":"Sales Invoice",
@@ -576,18 +588,6 @@
   "module": "Efacturamx",
   "name": "Sales Invoice-custom_qrcode"
  },
- {
-  "doctype":"Custom Field",
-  "dt":"Sales Invoice",
-  "module": "Efacturamx",
-  "name":"Sales-invoice-Error-Timbrado",
-  "fieldname":"error",
-  "fieldtype": "Text",
-  "label":"Error en Timbrado",
-  "insert_after":"custom_qrcode",
-  "allow_on_submit":1,
-  "read_only": 1
-},
 {
   "doctype":"Custom Field",
   "dt":"Sales Invoice Item",
@@ -885,7 +885,7 @@
   "dt":"Payment Entry",
   "module": "Efacturamx",
   "name":"Payment-Entry-Error-Timbrado",
-  "fieldname":"error",
+  "fieldname":"error_pe",
   "fieldtype": "Text",
   "label":"Error en Timbrado",
   "insert_after":"xml_cancelacion"
