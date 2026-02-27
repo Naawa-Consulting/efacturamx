@@ -799,7 +799,7 @@
   "label":"Motivo de Cancelación",
   "module": "Efacturamx",
   "name":"Payment-Entry-motivo-cancelacion",
-  "fieldname":"motivo_cancelacion",
+  "fieldname":"motivo_cancelacion_pe",
   "fieldtype": "Select",
   "insert_after": "cancelar_complemento",
   "options": "02"
@@ -811,7 +811,7 @@
   "name":"Payment-Entry-column-breakk1",
   "fieldname":"column_breakk1",
   "fieldtype": "Column Break",
-  "insert_after": "motivo_cancelacion",
+  "insert_after": "motivo_cancelacion_pe",
   "allow_on_submit":1
  },
  {
