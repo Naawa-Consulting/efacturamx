@@ -191,6 +191,7 @@
     {
         "doctype":  "Custom Field",
         "dt":  "Sales Invoice",
+        "depends_on":"eval:doc.status_timbre === \"Timbrado\"",
         "module":  "Efacturamx",
         "name":  "Sales-invoice-cfdi-que-sustituye",
         "fieldname":  "cfdi_que_sustituye",
@@ -203,6 +204,7 @@
     {
         "doctype":  "Custom Field",
         "dt":  "Sales Invoice",
+        "depends_on":"eval:doc.status_timbre === \"Timbrado\"",
         "module":  "Efacturamx",
         "name":  "Sales-invoice-uuid-que-sustituye",
         "fieldname":  "uuid_que_sustituye",
@@ -210,7 +212,6 @@
         "label":  "UUID sustituto",
         "insert_after":  "cfdi_que_sustituye",
         "fetch_from":  "cfdi_que_sustituye.custom_uuid",
-        "read_only":  0,
         "allow_on_submit":  1
     },
     {
@@ -505,10 +506,10 @@
         "fieldname":  "custom_uuid",
         "fieldtype":  "Data",
         "insert_after":  "section_datos_timbrado",
-        "is_virtual":  0,
         "label":  "UUID",
         "module":  "Efacturamx",
-        "name":  "Sales Invoice-custom_uuid"
+        "name":  "Sales Invoice-custom_uuid",
+        "read_only": 1
     },
     {
         "allow_on_submit":  1,
@@ -519,7 +520,8 @@
         "insert_after":  "custom_uuid",
         "label":  "xml",
         "module":  "Efacturamx",
-        "name":  "Sales Invoice-custom_xml"
+        "name":  "Sales Invoice-custom_xml",
+        "read_only": 1
     },
     {
         "doctype":  "Custom Field",
@@ -530,7 +532,8 @@
         "fieldtype":  "Data",
         "label":  "UUID de Cancelacion",
         "insert_after":  "custom_xml",
-        "allow_on_submit":  1
+        "allow_on_submit":  1,
+        "read_only": 1
     },
     {
         "doctype":  "Custom Field",
@@ -541,7 +544,8 @@
         "fieldtype":  "Attach",
         "label":  "XML de Cancelacion",
         "insert_after":  "uuid_cancelacion",
-        "allow_on_submit":  1
+        "allow_on_submit":  1,
+        "read_only": 1
     },
     {
         "allow_on_submit":  1,
@@ -552,7 +556,8 @@
         "insert_after":  "xml_cancelacion",
         "label":  "noCertificadoSAT",
         "module":  "Efacturamx",
-        "name":  "Sales Invoice-custom_nocertificadosat"
+        "name":  "Sales Invoice-custom_nocertificadosat",
+        "read_only": 1
     },
     {
         "allow_on_submit":  1,
@@ -563,7 +568,8 @@
         "insert_after":  "custom_nocertificadosat",
         "label":  "selloSAT",
         "module":  "Efacturamx",
-        "name":  "Sales Invoice-custom_sellosat"
+        "name":  "Sales Invoice-custom_sellosat",
+        "read_only": 1
     },
     {
         "allow_on_submit":  1,
@@ -574,7 +580,8 @@
         "insert_after":  "custom_sellosat",
         "label":  "qrCode",
         "module":  "Efacturamx",
-        "name":  "Sales Invoice-custom_qrcode"
+        "name":  "Sales Invoice-custom_qrcode",
+        "read_only": 1
     },
     {
         "doctype":  "Custom Field",
@@ -786,7 +793,7 @@
     {
         "doctype":  "Custom Field",
         "dt":  "Payment Entry",
-        "depends_on":  "eval:doc.status_timbre_pe === \"Sin Timbrar\"",
+        "depends_on":  "eval:doc.status_timbre_pe === \"Sin Timbrar\" \u0026\u0026 doc.docstatus === 1",
         "module":  "Efacturamx",
         "name":  "Payment-Entry-timbrar",
         "fieldname":  "timbrar_complemento",
@@ -795,7 +802,7 @@
         "insert_after":  "status_timbre_pe"
     },
     {
-        "depends_on":  "eval:doc.status_timbre === \"Timbrado\"",
+        "depends_on":  "eval:doc.status_timbre_pe === \"Timbrado\"",
         "doctype":  "Custom Field",
         "dt":  "Payment Entry",
         "fieldname":  "cancelar_complemento",
@@ -807,6 +814,7 @@
     {
         "doctype":  "Custom Field",
         "dt":  "Payment Entry",
+        "depends_on":"eval:doc.status_timbre_pe === \"Timbrado\"",
         "label":  "Motivo de Cancelación",
         "module":  "Efacturamx",
         "name":  "Payment-Entry-motivo-cancelacion",
@@ -834,7 +842,8 @@
         "fieldtype":  "Data",
         "label":  "UUID",
         "insert_after":  "column_breakk1",
-        "allow_on_submit":  1
+        "allow_on_submit": 1,
+        "read_only" : 1
     },
     {
         "doctype":  "Custom Field",
@@ -845,7 +854,8 @@
         "fieldtype":  "Attach",
         "label":  "XML",
         "insert_after":  "uuid",
-        "allow_on_submit":  1
+        "allow_on_submit":  1,
+        "read_only": 1
     },
     {
         "doctype":  "Custom Field",
@@ -856,7 +866,8 @@
         "fieldtype":  "Data",
         "label":  "UUID de Cancelacion",
         "insert_after":  "xml",
-        "allow_on_submit":  1
+        "allow_on_submit":  1, 
+        "read_only": 1
     },
     {
         "doctype":  "Custom Field",
@@ -878,7 +889,8 @@
         "fieldtype":  "Attach",
         "label":  "XML de Cancelacion",
         "insert_after":  "uuid_cancelacion",
-        "allow_on_submit":  1
+        "allow_on_submit":  1, 
+        "read_only": 1
     },
     {
         "doctype":  "Custom Field",
@@ -888,6 +900,7 @@
         "fieldname":  "error_pe",
         "fieldtype":  "Text",
         "label":  "Error en Timbrado",
-        "insert_after":  "xml_cancelacion"
+        "insert_after":  "xml_cancelacion",
+        "read_only": 1
     }
 ]
