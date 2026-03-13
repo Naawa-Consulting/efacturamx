@@ -43,7 +43,7 @@ frappe.ui.form.on("Sales Invoice", {
     cancelar_timbre: function(frm) {
 
         frappe.call({
-            method: "efacturamx.timbrado_naawa.cancelar_timbre",
+            method: "efacturamx.timbrado_naawa.timbrar",
             args: {
                 docname: frm.doc.name,
                 doctype: frm.doc.doctype,
