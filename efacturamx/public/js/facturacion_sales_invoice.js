@@ -2,6 +2,11 @@ frappe.ui.form.on("Sales Invoice", {
 
     timbrar: function(frm) {
 
+        const start_time = Date.now();
+        const min_duration = 3000;
+
+        frappe.dom.freeze("Timbrando...");
+
         frappe.call({
             method: "efacturamx.timbrado_naawa.timbrar",
             args: {
@@ -9,31 +14,38 @@ frappe.ui.form.on("Sales Invoice", {
                 doctype: frm.doc.doctype,
                 site_url: window.location.origin
             },
-            freeze: true,
-            freeze_message: "Timbrando...",
             callback: function(r) {
 
-                frm.reload_doc().then(() => {
+                const elapsed = Date.now() - start_time;
+                const remaining = Math.max(0, min_duration - elapsed);
 
-                    if (frm.doc.custom_uuid) {
+                setTimeout(() => {
 
-                        frappe.msgprint({
-                            title: __('Éxito'),
-                            message: 'Factura Timbrada',
-                            indicator: 'green'
-                        });
+                    frm.reload_doc().then(() => {
 
-                    } else if (frm.doc.error) {
+                        frappe.dom.unfreeze();
 
-                        frappe.msgprint({
-                            title: __('Error en Timbrado'),
-                            message: frm.doc.error,
-                            indicator: 'red'
-                        });
+                        if (frm.doc.custom_uuid) {
 
-                    }
+                            frappe.msgprint({
+                                title: __('Éxito'),
+                                message: 'Factura Timbrada',
+                                indicator: 'green'
+                            });
 
-                });
+                        } else if (frm.doc.error) {
+
+                            frappe.msgprint({
+                                title: __('Error en Timbrado'),
+                                message: frm.doc.error,
+                                indicator: 'red'
+                            });
+
+                        }
+
+                    });
+
+                }, remaining);
 
             }
         });
@@ -42,6 +54,11 @@ frappe.ui.form.on("Sales Invoice", {
 
     cancelar_timbre: function(frm) {
 
+        const start_time = Date.now();
+        const min_duration = 3000;
+
+        frappe.dom.freeze("Cancelando Timbre...");
+
         frappe.call({
             method: "efacturamx.timbrado_naawa.timbrar",
             args: {
@@ -49,31 +66,38 @@ frappe.ui.form.on("Sales Invoice", {
                 doctype: frm.doc.doctype,
                 site_url: window.location.origin
             },
-            freeze: true,
-            freeze_message: "Cancelando Timbre...",
             callback: function(r) {
 
-                frm.reload_doc().then(() => {
+                const elapsed = Date.now() - start_time;
+                const remaining = Math.max(0, min_duration - elapsed);
 
-                    if (frm.doc.uuid_cancelacion) {
+                setTimeout(() => {
 
-                        frappe.msgprint({
-                            title: __('Éxito'),
-                            message: 'Factura Cancelada',
-                            indicator: 'green'
-                        });
+                    frm.reload_doc().then(() => {
 
-                    } else if (frm.doc.error) {
+                        frappe.dom.unfreeze();
 
-                        frappe.msgprint({
-                            title: __('Error en Cancelación'),
-                            message: frm.doc.error,
-                            indicator: 'red'
-                        });
+                        if (frm.doc.uuid_cancelacion) {
 
-                    }
+                            frappe.msgprint({
+                                title: __('Éxito'),
+                                message: 'Factura Cancelada',
+                                indicator: 'green'
+                            });
 
-                });
+                        } else if (frm.doc.error) {
+
+                            frappe.msgprint({
+                                title: __('Error en Cancelación'),
+                                message: frm.doc.error,
+                                indicator: 'red'
+                            });
+
+                        }
+
+                    });
+
+                }, remaining);
 
             }
         });
